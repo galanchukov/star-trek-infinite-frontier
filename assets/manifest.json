@@ -1,0 +1,194 @@
+{
+  "source_sheets": [
+    "civilization-ships.png",
+    "civilization-emblems.png",
+    "tos-officers.png"
+  ],
+  "civilizations": [
+    {
+      "id": "humans",
+      "name": "Люди",
+      "ship": "civilizations/ships/humans.png",
+      "emblem": "civilizations/emblems/humans.png"
+    },
+    {
+      "id": "vulcans",
+      "name": "Вулканцы",
+      "ship": "civilizations/ships/vulcans.png",
+      "emblem": "civilizations/emblems/vulcans.png"
+    },
+    {
+      "id": "klingons",
+      "name": "Клингонцы",
+      "ship": "civilizations/ships/klingons.png",
+      "emblem": "civilizations/emblems/klingons.png"
+    },
+    {
+      "id": "romulans",
+      "name": "Ромуланцы",
+      "ship": "civilizations/ships/romulans.png",
+      "emblem": "civilizations/emblems/romulans.png"
+    },
+    {
+      "id": "cardassians",
+      "name": "Кардассианцы",
+      "ship": "civilizations/ships/cardassians.png",
+      "emblem": "civilizations/emblems/cardassians.png"
+    },
+    {
+      "id": "ferengi",
+      "name": "Ференги",
+      "ship": "civilizations/ships/ferengi.png",
+      "emblem": "civilizations/emblems/ferengi.png"
+    },
+    {
+      "id": "andorians",
+      "name": "Андорианцы",
+      "ship": "civilizations/ships/andorians.png",
+      "emblem": "civilizations/emblems/andorians.png"
+    },
+    {
+      "id": "tellarites",
+      "name": "Теллариты",
+      "ship": "civilizations/ships/tellarites.png",
+      "emblem": "civilizations/emblems/tellarites.png"
+    },
+    {
+      "id": "bajorans",
+      "name": "Байоранцы",
+      "ship": "civilizations/ships/bajorans.png",
+      "emblem": "civilizations/emblems/bajorans.png"
+    },
+    {
+      "id": "trill",
+      "name": "Триллы",
+      "ship": "civilizations/ships/trill.png",
+      "emblem": "civilizations/emblems/trill.png"
+    },
+    {
+      "id": "betazoids",
+      "name": "Бетазоиды",
+      "ship": "civilizations/ships/betazoids.png",
+      "emblem": "civilizations/emblems/betazoids.png"
+    },
+    {
+      "id": "borg",
+      "name": "Борг",
+      "ship": "civilizations/ships/borg.png",
+      "emblem": "civilizations/emblems/borg.png"
+    },
+    {
+      "id": "founders",
+      "name": "Основатели (Чейнджлинги)",
+      "ship": "civilizations/ships/founders.png",
+      "emblem": "civilizations/emblems/founders.png"
+    },
+    {
+      "id": "vorta",
+      "name": "Ворта",
+      "ship": "civilizations/ships/vorta.png",
+      "emblem": "civilizations/emblems/vorta.png"
+    },
+    {
+      "id": "jemhadar",
+      "name": "Джем'Хадар",
+      "ship": "civilizations/ships/jemhadar.png",
+      "emblem": "civilizations/emblems/jemhadar.png"
+    },
+    {
+      "id": "kazon",
+      "name": "Казоны",
+      "ship": "civilizations/ships/kazon.png",
+      "emblem": "civilizations/emblems/kazon.png"
+    },
+    {
+      "id": "ocampa",
+      "name": "Окампа",
+      "ship": "civilizations/ships/ocampa.png",
+      "emblem": "civilizations/emblems/ocampa.png"
+    },
+    {
+      "id": "species-8472",
+      "name": "Вид 8472",
+      "ship": "civilizations/ships/species-8472.png",
+      "emblem": "civilizations/emblems/species-8472.png"
+    }
+  ],
+  "officers_tos": [
+    {
+      "id": "james-t-kirk",
+      "name": "Джеймс Т. Кирк",
+      "role": "Капитан",
+      "series": "The Original Series",
+      "card": "officers/tos/james-t-kirk.png"
+    },
+    {
+      "id": "spock",
+      "name": "Спок",
+      "role": "Первый офицер",
+      "series": "The Original Series",
+      "card": "officers/tos/spock.png"
+    },
+    {
+      "id": "leonard-mccoy",
+      "name": "Леонард Маккой",
+      "role": "Главный врач",
+      "series": "The Original Series",
+      "card": "officers/tos/leonard-mccoy.png"
+    },
+    {
+      "id": "montgomery-scott",
+      "name": "Монтгомери Скотт",
+      "role": "Главный инженер",
+      "series": "The Original Series",
+      "card": "officers/tos/montgomery-scott.png"
+    },
+    {
+      "id": "nyota-uhura",
+      "name": "Нийота Ухура",
+      "role": "Офицер связи",
+      "series": "The Original Series",
+      "card": "officers/tos/nyota-uhura.png"
+    },
+    {
+      "id": "hikaru-sulu",
+      "name": "Хикару Сулу",
+      "role": "Рулевой",
+      "series": "The Original Series",
+      "card": "officers/tos/hikaru-sulu.png"
+    },
+    {
+      "id": "pavel-chekov",
+      "name": "Павел Чехов",
+      "role": "Навигатор",
+      "series": "The Original Series",
+      "card": "officers/tos/pavel-chekov.png"
+    },
+    {
+      "id": "christine-chapel",
+      "name": "Кристин Чапел",
+      "role": "Медсестра",
+      "series": "The Original Series",
+      "card": "officers/tos/christine-chapel.png"
+    },
+    {
+      "id": "gary-mitchell",
+      "name": "Гэри Митчелл",
+      "role": "Офицер",
+      "series": "The Original Series",
+      "card": "officers/tos/gary-mitchell.png"
+    },
+    {
+      "id": "khan",
+      "name": "Кан",
+      "role": "Контрабандист",
+      "series": "The Original Series",
+      "card": "officers/tos/khan.png"
+    }
+  ],
+  "notes": [
+    "Individual crops are taken directly from the supplied original sprite sheets. No redraw or AI regeneration was performed.",
+    "Ship crops retain their source card framing and labels.",
+    "TOS officer crops retain portrait frame, name, and role text."
+  ]
+}
