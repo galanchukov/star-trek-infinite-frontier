@@ -1,0 +1,206 @@
+        :root {
+            --lcars-orange: #ff9900;
+            --lcars-amber: #ffcc66;
+            --lcars-blue: #5599ff;
+            --lcars-cyan: #00e5ff;
+            --lcars-lilac: #cc99cc;
+            --lcars-red: #ff3344;
+            --lcars-bg: #050811;
+            --lcars-panel: #0b1224;
+        }
+
+        * {
+            box-sizing: border-box;
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #020408;
+            color: #e2f1ff;
+            font-family: 'Rajdhani', sans-serif;
+            overflow: hidden;
+            height: 100dvh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        /* Mobile 9:16 Container Frame */
+        #game-viewport {
+            position: relative;
+            width: 100%;
+            height: 100dvh;
+            max-width: 460px;
+            max-height: 920px;
+            background: radial-gradient(circle at 50% 28%, #0f1f3d 0%, #050811 70%, #020307 100%);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 0 50px rgba(0, 229, 255, 0.15), inset 0 0 2px rgba(255, 153, 0, 0.4);
+        }
+
+        @media (min-width: 480px) {
+            #game-viewport {
+                height: 95dvh;
+                border-radius: 28px;
+                border: 3px solid #1e2f4d;
+            }
+        }
+
+        /* LCARS Decorative Elements */
+        .lcars-bar-top {
+            height: 6px;
+            background: linear-gradient(90deg, var(--lcars-orange) 0%, var(--lcars-orange) 65%, transparent 65%, transparent 67%, var(--lcars-cyan) 67%, var(--lcars-cyan) 88%, transparent 88%, transparent 90%, var(--lcars-lilac) 90%, var(--lcars-lilac) 100%);
+        }
+
+        .lcars-card {
+            background: linear-gradient(135deg, rgba(16, 28, 56, 0.92) 0%, rgba(8, 15, 32, 0.96) 100%);
+            border-left: 5px solid var(--lcars-orange);
+            border-top: 1px solid rgba(0, 229, 255, 0.22);
+            border-right: 1px solid rgba(0, 229, 255, 0.15);
+            border-bottom: 1px solid rgba(0, 229, 255, 0.15);
+            border-radius: 6px 14px 14px 6px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* TOS Character Card Styling (Reference 3) */
+        .tos-char-card {
+            position: relative;
+            background: radial-gradient(circle at 50% 35%, #16264c 0%, #070d1d 85%);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .tos-char-card:active {
+            transform: scale(0.98);
+        }
+        .rarity-common {
+            border: 2px solid #94a3b8;
+            box-shadow: 0 0 10px rgba(148, 163, 184, 0.2), inset 0 0 8px rgba(148, 163, 184, 0.15);
+        }
+        .rarity-uncommon {
+            border: 2px solid #38bdf8;
+            box-shadow: 0 0 12px rgba(56, 189, 248, 0.28), inset 0 0 8px rgba(56, 189, 248, 0.2);
+        }
+        .rarity-rare {
+            border: 2px solid #a855f7;
+            box-shadow: 0 0 14px rgba(168, 85, 247, 0.32), inset 0 0 10px rgba(168, 85, 247, 0.22);
+        }
+        .rarity-epic {
+            border: 2px solid #fbbf24;
+            box-shadow: 0 0 16px rgba(251, 191, 36, 0.35), inset 0 0 10px rgba(251, 191, 36, 0.25);
+        }
+        .rarity-legendary {
+            border: 2px solid #ef4444;
+            box-shadow: 0 0 18px rgba(239, 68, 68, 0.42), inset 0 0 12px rgba(239, 68, 68, 0.28);
+        }
+
+        /* Civilization Reference Card (References 1 & 2) */
+        .civ-card {
+            background: radial-gradient(circle at 50% 45%, #0c1a36 0%, #050a16 75%, #03060e 100%);
+            border: 1.5px solid rgba(56, 189, 248, 0.45);
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.65), inset 0 0 15px rgba(0, 229, 255, 0.06);
+            transition: all 0.15s ease;
+        }
+        .civ-card:hover, .civ-card:active {
+            border-color: #38bdf8;
+            box-shadow: 0 0 16px rgba(56, 189, 248, 0.35), inset 0 0 20px rgba(0, 229, 255, 0.12);
+        }
+
+        .lcars-btn {
+            transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lcars-btn:active:not(:disabled) {
+            transform: scale(0.95);
+            filter: brightness(1.2);
+        }
+
+        .lcars-btn:disabled {
+            opacity: 0.4;
+            filter: grayscale(0.6);
+            cursor: not-allowed;
+        }
+
+        /* Custom Scrollbar */
+        .custom-scroll::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: rgba(5, 10, 20, 0.6);
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: var(--lcars-orange);
+            border-radius: 99px;
+        }
+
+        /* Enemy Animations */
+        @keyframes floatShip {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-6px) rotate(0.8deg); }
+        }
+
+        @keyframes hitShake {
+            0% { transform: translate(0, 0) scale(1); filter: brightness(1); }
+            25% { transform: translate(-7px, 4px) scale(0.96); filter: brightness(1.8) drop-shadow(0 0 16px #00e5ff); }
+            50% { transform: translate(7px, -4px) scale(0.98); }
+            75% { transform: translate(-4px, -2px) scale(0.99); }
+            100% { transform: translate(0, 0) scale(1); filter: brightness(1); }
+        }
+
+        @keyframes redAlertPulse {
+            0%, 100% { box-shadow: inset 0 0 18px rgba(255, 30, 50, 0.25); border-color: rgba(255, 51, 68, 0.5); }
+            50% { box-shadow: inset 0 0 40px rgba(255, 30, 50, 0.65); border-color: rgba(255, 51, 68, 1); }
+        }
+
+        .ship-floating {
+            animation: floatShip 3.6s ease-in-out infinite;
+        }
+
+        .ship-hit {
+            animation: hitShake 0.18s ease-out;
+        }
+
+        .boss-alert-zone {
+            animation: redAlertPulse 1.2s infinite;
+        }
+
+        /* Floating Damage Text */
+        @keyframes floatUpFade {
+            0% { opacity: 1; transform: translate(-50%, 0) scale(0.7); }
+            20% { opacity: 1; transform: translate(-50%, -14px) scale(1.1); }
+            100% { opacity: 0; transform: translate(-50%, -55px) scale(0.9); }
+        }
+
+        .dmg-popup {
+            position: absolute;
+            pointer-events: none;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            z-index: 40;
+            animation: floatUpFade 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.95);
+        }
+
+        /* Grid overlay in combat */
+        .tactical-grid {
+            background-size: 28px 28px;
+            background-image: 
+                linear-gradient(to right, rgba(0, 229, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
+        }
